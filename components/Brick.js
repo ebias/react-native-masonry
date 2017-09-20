@@ -35,11 +35,9 @@ export function _getImageTag (props, gutter = 0) {
   };
 
   return (
-    <Injector
-      defaultComponent={Image}
-      defaultProps={imageProps}
-      injectant={props.customImageComponent}
-      injectantProps={props.customImageProps} />
+     <Image
+      {... imageProps}
+    />
   )
 }
 
