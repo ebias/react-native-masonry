@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, Image, TouchableHighlight } from 'react-native';
 import Injector from 'react-native-injectable-component';
+import {CachedImage} from "react-native-img-cache";
 
 export default function Brick (props) {
   // Avoid margins for first element
@@ -35,7 +36,7 @@ export function _getImageTag (props, gutter = 0) {
   };
 
   return (
-     <Image
+     <CachedImage
       {... imageProps}
     />
   )
