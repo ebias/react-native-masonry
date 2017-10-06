@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Image, TouchableHighlight } from 'react-native';
 import Injector from 'react-native-injectable-component';
-import {CachedImage} from "react-native-img-cache";
+import { CachedImage } from "react-native-img-cache";
 
 export default function Brick (props) {
   // Avoid margins for first element
